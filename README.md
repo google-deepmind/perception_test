@@ -1,26 +1,43 @@
-# perception_test
+# Perception Test
 
-TODO(b/249738547): Add a description for your new project, explain what is
-being released here, etc... Additional, the following sections are normally
-expected for all releases. Feel free to add additional sections if appropriate
-for your project.
+[Perception Test: A Diagnostic Benchmark for
+Multimodal Models](https://storage.googleapis.com/dm-perception-test/perception_test_report.pdf) is a multimodal benchmark that aims to comprehensively
+evaluate perception and reasoning skills of multimodal models. The Perception Test dataset introduces real-world
+videos designed to show perceptually interesting situations and defines multiple tasks that require
+understanding of memory, abstract patterns, physics, and semantics – across visual, audio, and text
+modalities.
 
-## Installation
+[![Example of tracked objects](https://img.youtube.com/vi/XJP1QFOsF-4/hqdefault.jpg)](https://youtu.be/XJP1QFOsF-4)
 
-Write instructions for how the user should install your code. The instructions
-should ideally be valid when copy-pasted. You can combine this with the Usage
-section if there's no separate installation step.
+[Playlist of more examples](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R)
+
+The dataset consists of 11.7k videos (with audio), of 23s average length, and filmed by
+around 100 participants worldwide. The videos are annotated with six types of labels: object and point
+tracks, temporal action and sound segments, multiple-choice video question-answers and grounded
+video question-answers. The dataset probes pre-trained models for their transfer capabilities, in
+either zero-shot or fine-tuning regime.
+
+The training and validation splits of the benchmark will be publicly available soon. In the meantime this repo contains a Colab
+that demonstrates how to access and visualise the dataset, which we hope will inspire
+and contribute to progress towards more general perception models.
+
 
 ## Usage
 
-Write example usage of your code. The instructions should ideally be valid when
-copy-pasted, and will be used by your technical reviewer to verify that your
-package functions correctly.
+[![Open Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deepmind/perception_test/blob/main/inspect_data.ipynb)
+
 
 ## Citing this work
 
-Add citation details here, usually a pastable BibTeX snippet.
-
+```@techreport{perceptiontestv1,
+     title = {{Perception Test: A Diagnostic Benchmark for Multimodal Models}},
+     author = {Viorica Pătrăucean and Lucas Smaira and Ankush Gupta and Adrià Recasens Continente and Larisa Markeeva and Dylan Banarse and Mateusz Malinowski and Yi Yang and Carl Doersch and Tatiana Matejovicova and Yury Sulsky and AntoineMiech and Skanda Koppula and Alex Frechette and Hanna Klimczak and Raphael Koster and Junlin Zhang and StephanieWinkler and Yusuf Aytar and Simon Osindero and Dima Damen and Andrew Zisserman and João Carreira},
+     year = {2022},
+     institution = {DeepMind},
+     month = {10},
+     Date-Added = {2022-10-12}
+}
+```
 ## License and disclaimer
 
 Copyright 2022 DeepMind Technologies Limited
