@@ -19,7 +19,7 @@ video question-answers; see above example of annotations for object tracking.
 The dataset probes pre-trained models for their *transfer capabilities*, in
 either zero-shot or fine-tuning regime.
 
-This repo contains a Colab that demonstrates how to access, parse and visualise the training and validation splits of the dataset which are publicly available at [https://storage.cloud.google.com/dm-perception-test](https://storage.googleapis.com/dm-perception-test) and can be downloaded using the [gsutil](https://cloud.google.com/storage/docs/gsutil) tool. The test split will be available through an evaluation server. 
+This repo contains a Colab that demonstrates how to access, parse and visualise the training and validation splits of the dataset which are publicly available at [https://storage.cloud.google.com/dm-perception-test](https://storage.cloud.google.com/dm-perception-test) and can be downloaded using the [gsutil](https://cloud.google.com/storage/docs/gsutil) tool. The test split will be available through an evaluation server. 
 
 We hope this will inspire and contribute to progress towards more general perception models. If you have any comments, suggestions, concerns about the dataset, please contact us at perception-test at google dot com
 
