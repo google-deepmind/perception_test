@@ -28,7 +28,8 @@ We hope this will inspire and contribute to progress towards more general percep
 
 ## Citing this work
 
-```@techreport{perceptiontestv1,
+```
+@techreport{perceptiontestv1,
      title = {{Perception Test: A Diagnostic Benchmark for Multimodal Models}},
      author = {Viorica Pătrăucean and Lucas Smaira and Ankush Gupta and Adrià Recasens Continente and Larisa Markeeva and Dylan Banarse and Mateusz Malinowski and Yi Yang and Carl Doersch and Tatiana Matejovicova and Yury Sulsky and AntoineMiech and Skanda Koppula and Alex Frechette and Hanna Klimczak and Raphael Koster and Junlin Zhang and StephanieWinkler and Yusuf Aytar and Simon Osindero and Dima Damen and Andrew Zisserman and João Carreira},
      year = {2022},
