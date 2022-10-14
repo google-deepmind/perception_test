@@ -5,16 +5,18 @@ Multimodal Models](https://storage.googleapis.com/dm-perception-test/perception_
 evaluate perception and reasoning skills of multimodal models. The Perception Test dataset introduces real-world
 videos designed to show perceptually interesting situations and defines multiple tasks that require
 understanding of memory, abstract patterns, physics, and semantics – across visual, audio, and text
-modalities.
+modalities. 
 
 [![Example of tracked objects](https://img.youtube.com/vi/XJP1QFOsF-4/hqdefault.jpg)](https://youtu.be/XJP1QFOsF-4)
 
-[Playlist of more examples](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R)
+[Playlist of more example videos in the Perception Test](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R)
 
 The dataset consists of 11.6k videos (with audio), of 23s average length, and filmed by
 around 100 participants worldwide. The videos are annotated with six types of labels: object and point
 tracks, temporal action and sound segments, multiple-choice video question-answers and grounded
-video question-answers. The dataset probes pre-trained models for their *transfer capabilities*, in
+video question-answers; see above example of annotations for object tracking.
+
+The dataset probes pre-trained models for their *transfer capabilities*, in
 either zero-shot or fine-tuning regime.
 
 This repo contains a Colab that demonstrates how to access, parse and visualise the training and validation splits of the dataset which are publicly available at [https://storage.cloud.google.com/dm-perception-test](https://storage.cloud.google.com/dm-perception-test) and can be downloaded using the [gsutil](https://cloud.google.com/storage/docs/gsutil) tool. The test split will be available through an evaluation server. We hope this will inspire and contribute to progress towards more general perception models.
