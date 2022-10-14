@@ -17,12 +17,7 @@ tracks, temporal action and sound segments, multiple-choice video question-answe
 video question-answers. The dataset probes pre-trained models for their transfer capabilities, in
 either zero-shot or fine-tuning regime.
 
-The training and validation splits of the benchmark will be publicly available soon. In the meantime this repo contains a Colab
-that demonstrates how to access and visualise the dataset, which we hope will inspire
-and contribute to progress towards more general perception models.
-
-
-## Usage
+This repo contains a Colab that demonstrates how to access, parse and visualise the training and test splits of the dataset which are publicly available at [https://storage.cloud.google.com/dm-perception-test](https://storage.cloud.google.com/dm-perception-test) and can be downloaded using the [gsutil](https://cloud.google.com/storage/docs/gsutil) tool. We hope this will inspire and contribute to progress towards more general perception models.
 
 [![Open Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deepmind/perception_test/blob/main/inspect_data.ipynb)
 
