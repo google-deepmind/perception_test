@@ -11,13 +11,13 @@ modalities.
 
 [Playlist of more examples](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R)
 
-The dataset consists of 11.7k videos (with audio), of 23s average length, and filmed by
+The dataset consists of 11.6k videos (with audio), of 23s average length, and filmed by
 around 100 participants worldwide. The videos are annotated with six types of labels: object and point
 tracks, temporal action and sound segments, multiple-choice video question-answers and grounded
-video question-answers. The dataset probes pre-trained models for their transfer capabilities, in
+video question-answers. The dataset probes pre-trained models for their *transfer capabilities*, in
 either zero-shot or fine-tuning regime.
 
-This repo contains a Colab that demonstrates how to access, parse and visualise the training and test splits of the dataset which are publicly available at [https://storage.cloud.google.com/dm-perception-test](https://storage.cloud.google.com/dm-perception-test) and can be downloaded using the [gsutil](https://cloud.google.com/storage/docs/gsutil) tool. We hope this will inspire and contribute to progress towards more general perception models.
+This repo contains a Colab that demonstrates how to access, parse and visualise the training and validation splits of the dataset which are publicly available at [https://storage.cloud.google.com/dm-perception-test](https://storage.cloud.google.com/dm-perception-test) and can be downloaded using the [gsutil](https://cloud.google.com/storage/docs/gsutil) tool. The test split will be available through an evaluation server. We hope this will inspire and contribute to progress towards more general perception models.
 
 [![Open Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deepmind/perception_test/blob/main/inspect_data.ipynb)
 
