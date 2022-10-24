@@ -9,6 +9,8 @@ modalities.
 
 [![Example of tracked objects](https://img.youtube.com/vi/XJP1QFOsF-4/hqdefault.jpg)](https://youtu.be/XJP1QFOsF-4)
 
+[GoogleForm-quiz to try the Perception Test yourself](https://docs.google.com/forms/d/e/1FAIpQLScp49reYMAByszH6vo_y6umlkBPwsua2-kMpGjff3IV0YzYkw/viewform?usp=sf_link)
+
 [Playlist of more example videos in the Perception Test](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R)
 
 The dataset consists of 11.6k videos (with audio), of 23s average length, and filmed by
