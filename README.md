@@ -1,7 +1,9 @@
 # Perception Test
 
-**February 9, 2023**: Recordings from the Computer Perception workshop at ECCV 2022 where we introduced the Perception Test benchmark are available on the [workshop page](https://computerperception.github.io/). Slides presenting the Perception Test and the available tasks are available [here](https://github.com/ComputerPerception/computerperception.github.io/blob/main/CoPe%20workshop%20ECCV2022.pdf)
+## News
+**February 9, 2023**: Recordings from the Computer Perception workshop at ECCV 2022 where we introduced the Perception Test benchmark are available on the [workshop page](https://computerperception.github.io/). Slides presenting the Perception Test and the available tasks are available [here](https://github.com/ComputerPerception/computerperception.github.io/blob/main/CoPe%20workshop%20ECCV2022.pdf).
 
+## Overview
 [Perception Test: A Diagnostic Benchmark for
 Multimodal Models](https://storage.googleapis.com/dm-perception-test/perception_test_report.pdf) is a multimodal benchmark that aims to comprehensively
 evaluate perception and reasoning skills of multimodal models. The Perception Test dataset introduces real-world
