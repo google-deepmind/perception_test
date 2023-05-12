@@ -11,7 +11,7 @@ videos designed to show perceptually interesting situations and defines multiple
 understanding of memory, abstract patterns, physics, and semantics – across visual, audio, and text
 modalities. 
 
-[![Example of tracked objects](https://img.youtube.com/vi/XJP1QFOsF-4/hqdefault.jpg)](https://youtu.be/XJP1QFOsF-4)
+[![Presentatoin video](https://i9.ytimg.com/vi_webp/8BiajMOBWdk/mqdefault.webp?v=645e57a1&sqp=CMit-aIG&rs=AOn4CLChIJ5SONmQ-HRoUsqa4Tf0PXQaaA)](https://youtu.be/8BiajMOBWdk)
 
 [GoogleForm-quiz to try the Perception Test yourself](https://docs.google.com/forms/d/e/1FAIpQLScp49reYMAByszH6vo_y6umlkBPwsua2-kMpGjff3IV0YzYkw/viewform?usp=sf_link)
 
