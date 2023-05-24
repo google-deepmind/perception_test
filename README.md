@@ -149,7 +149,7 @@ The Perception Test dataset can be downloaded as zip files containing:
 
 ## Baselines
 
-Coming soon.
+Code for data loaders and simple baseline models coming very soon. Stay tuned!
 
 ## Metrics
 
