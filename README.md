@@ -1,47 +1,186 @@
-# Perception Test
+# Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
 ## News
-**February 9, 2023**: Recordings from the Computer Perception workshop at ECCV 2022 where we introduced the Perception Test benchmark are available on the [workshop page](https://computerperception.github.io/). Slides presenting the Perception Test and the available tasks are available [here](https://github.com/ComputerPerception/computerperception.github.io/blob/main/CoPe%20workshop%20ECCV2022.pdf).
+## News
+
+- **May 14, 2023**: The ICCV challenge website is live! Visit [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/) to find out details about the workshop-challenge.
+- **May 2, 2023**: Don't miss the first Perception Test challenge, organised as an ICCV2023 workshop, taking place on October 3rd, 2023. Check the [ICCV 2023 workshops](https://iccv2023.thecvf.com/list.of.accepted.workshops-363300-4-31-33.php) page for more details.
+- **February 9, 2023**: Recordings from the Computer Perception workshop at ECCV 2022 where we introduced the Perception Test benchmark are available on the [workshop page](https://computerperception.github.io/). Slides presenting the Perception Test and the available tasks are available [here](https://github.com/ComputerPerception/computerperception.github.io/blob/main/CoPe%20workshop%20ECCV2022.pdf).
 
 ## Overview
-[Perception Test: A Diagnostic Benchmark for
-Multimodal Models](https://storage.googleapis.com/dm-perception-test/perception_test_report.pdf) is a multimodal benchmark that aims to comprehensively
-evaluate perception and reasoning skills of multimodal models. The Perception Test dataset introduces real-world
-videos designed to show perceptually interesting situations and defines multiple tasks that require
-understanding of memory, abstract patterns, physics, and semantics – across visual, audio, and text
-modalities. 
+[Perception Test: A Diagnostic Benchmark for Multimodal Video Models](https://arxiv.org/abs/2305.13786) is a multimodal benchmark designed to comprehensively evaluate the perception and reasoning skills of multimodal video models. The Perception Test dataset introduces real-world videos designed to show perceptually interesting situations and defines multiple tasks (object and point tracking, action and sound localisation, multiple-choice and grounded video question-answering) that require understanding of memory, abstract patterns, physics, and semantics, across visual, audio, and text modalities.
 
-[![Presentation video](https://img.youtube.com/vi/8BiajMOBWdk/maxresdefault.jpg)](https://youtu.be/8BiajMOBWdk)
+In this repository, you will find:
+* a summary of the Perception Test and the associated challenge
+* a detailed description of the data and annotations in the Perception Test
+* details about how to download the data and annotations in the Perception Test
+* metrics for evaluating the performance on the different tasks
+* simple baselines showcasing how to evaluate models on each of the tasks 
 
-[GoogleForm-quiz to try the Perception Test yourself](https://docs.google.com/forms/d/e/1FAIpQLScp49reYMAByszH6vo_y6umlkBPwsua2-kMpGjff3IV0YzYkw/viewform?usp=sf_link)
+**Contact**: perception-test at google dot com
 
-[Playlist of more example videos in the Perception Test](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R)
+## Challenge Website
+Visit [the First Perception Test Challenge website](https://ptchallenge-workshop.github.io/) for details about the challenge-workshop, available tracks, and important dates.
 
-The dataset consists of 11.6k videos (with audio), of 23s average length, and filmed by
-around 100 participants worldwide. The videos are annotated with six types of labels: object and point
-tracks, temporal action and sound segments, multiple-choice video question-answers and grounded
-video question-answers; see above example of annotations for object tracking.
+## 5-minutes summary of the Perception Test
+[![Perception Test Overview Presentation](https://img.youtube.com/vi/8BiajMOBWdk/maxresdefault.jpg)](https://youtu.be/8BiajMOBWdk)
 
-The dataset probes pre-trained models for their *transfer capabilities*, in
-either zero-shot or fine-tuning regime.
+*Try the Perception Test for yourself by accessing this [quiz](https://docs.google.com/forms/d/e/1FAIpQLScp49reYMAByszH6vo_y6umlkBPwsua2-kMpGjff3IV0YzYkw/viewform?usp=sf_link).*
 
-This repo contains a Colab that demonstrates how to access, parse and visualise the training and test splits of the datasets. The [gsutil](https://cloud.google.com/storage/docs/gsutil) tool can be used to browse and download the datasets (currently requiring Google account authentication). For example, list the directories with ```gsutil ls gs://dm-perception-test/tfrecords/v1``` and download the `base_oss` dataset with ```gsutil cp -r gs://dm-perception-test/tfrecords/v1/base_oss .```. A held-out test split will be available through an evaluation server. 
+For more example videos in the Perception Test, check out this [playlist](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R).
 
-We hope this will inspire and contribute to progress towards more general perception models. If you have any comments, suggestions, concerns about the dataset, please contact us at perception-test at google dot com
+## Perception Test annotations
 
-[![Open Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deepmind/perception_test/blob/main/inspect_data.ipynb)
+**Explore the annotations**: Colab coming soon.
 
+**Summary**
+
+| Annotation type          | Number of videos | Number of annotations |
+|--------------------------|------------------|-----------------------|
+| Object tracks            |           11,609 |       189940        |
+| Point tracks             |              145 |          8647 |
+| Action segments          |           11,353 |             73503       |
+| Sound segments           |           11,433 |                137128    |
+| Multi-choice vQA         |           10,361 |             38060|
+| Grounded vQA             |            3,063 |                6086   |
+
+**Video metadata**
+
+
+| Field Name          | Description                                               |
+|---------------------|-----------------------------------------------------------|
+| split               | The data split the video belongs to                        |
+| video_id            | The ID of the video                                       |
+| frame_rate          | The frame rate of the video in frames per second           |
+| num_frames          | The total number of frames in the video                    |
+| resolution          | The height and width of the video in pixels                |
+| audio_samples       | The total number of audio samples in the video             |
+| audio_sample_rate   | The sample rate of the audio in the video in Hz            |
+| is_cup_game         | Whether the video shows a cups-game or not                 |
+| is_camera_moving    | Whether the camera used to film the video is moving or not |
+
+
+**Object tracks**
+
+| Field Name             | Description                                                             |
+|------------------------|-------------------------------------------------------------------------|
+| task_id                | A unique annotation ID for each object track                             |
+| label                  | The name of the object, can also contain object attributes               |
+| is_occluder            | Whether the object occludes other objects in the video                    |
+| bounding_boxes         | The coordinates of the object's bounding boxes (collected at 1fps)                              |
+| initial_tracking_box   | One-hot vector indicating which box annotation should be used to start tracking |
+| frame_ids              | The IDs of the frames that are annotated                                  |
+| timestamps             | The timestamps of the annotated frames in ms                             |
+| is_masked              | Whether the object is masked in the annotated frame                       |
+
+**Point tracks**
+
+| Field Name       | Description                                       |
+|------------------|---------------------------------------------------|
+| task_id          | A unique annotation ID for each point track       |
+| label            | The label of the point track                      |
+| parent_objects   | The track_id of the object that the point belongs to |
+| frame_ids        | The IDs of the frames that are annotated          |
+| points           | The coordinates of the points (collected at 30fps)                      |
+
+**Action segments**
+
+| Field Name        | Description                                      |
+|-------------------|--------------------------------------------------|
+| task_id           | A unique annotation ID for each action segment   |
+| label             | The templated class of the action segment        |
+| parent_objects    | The task_ids of the objects involved in the action |
+| timestamps        | The start and end timestamps of the action segment |
+| frame_ids         | The start and end frame IDs of the action segment |
+| label_id          | A unique class ID for each label in the dataset  |
+
+
+**Sound segments**
+
+| Field Name        | Description                                      |
+|-------------------|--------------------------------------------------|
+| id                | A unique annotation ID for each sound segment    |
+| label             | The name or class of the sound segment           |
+| parent_objects    | The object task_ids related to this sound segment |
+| timestamps        | The start and end timestamps of the sound segment |
+| frame_ids         | The start and end frame IDs of the sound segment  |
+| is_visible        | Whether the objects causing the sound in this segment are visible or not |
+| label_id          | A unique class ID for each label in the dataset  |
+
+
+**Multi-choice video question-answers**
+
+| Field Name       | Description                                             |
+|------------------|---------------------------------------------------------|
+| task_id          | A unique annotation ID for each question                |
+| question         | The text of the question                                |
+| options          | The 3 possible options for the question, only 1 is correct                   |
+| answer_id        | The ID of the correct option for the question           |
+| area             | The skill area the question pertains to                 |
+| reasoning        | The type of reasoning required to answer the question   |
+| tags              | Different skills involved in answering the given question |
+
+
+**Grounded video question-answers**
+
+| Field Name       | Description                                             |
+|------------------|---------------------------------------------------------|
+| task_id          | A unique annotation ID for each question                |
+| question         | The text of the question                                |
+| answers          | The answer for the question given as a list of object track_ids (corresponding to object tracks) |
+| area             | The skill area the question pertains to                 |
+| reasoning        | The type of reasoning required to answer the question   |
+
+## Download the data and annotations
+The Perception Test dataset can be downloaded as zip files containing:
+* annotations in JSON format
+* videos (including audio) as MP4 files
+* audio-only files in WAV format
+* pre-computed features for the action localisation and sound localisation tasks.
+
+
+**Links**
+
+| Task                      | Split  | Labels | Videos | Audio |
+|---------------------------|--------|--------|--------|-------|
+| Sample                    | All    |        |        |       |
+| All Tasks                 | Train  |        |        |       |
+| All Tasks                 | Valid  |        |        |       |
+| All Tasks                 | All    |        |        |       |
+
+## Baselines
+
+Coming soon.
+
+## Metrics
+
+<!-- The [metrics file](https://link) contains the metric code to evaluate the performance for the different tasks. -->
+
+| Computational task       |Metric |
+|--------------------------|------------------|
+| Object tracking            |            mean IoU       |
+| Point tracking             |              Jaccard |
+| Temporal action localisation          |           mean Average Precision |            
+| Tempotal sound localisation           |           mean Average Precision |            
+| Multi-choice vQA         |           top-1 accuracy|
+| Grounded vQA             |            HOTA   |
+
+Metrics code to evaluate performance for the different tasks coming soon.
+
+## Feedback and support
+
+If you have any questions, feedback, or require support regarding the Perception Test dataset or challenge, please contact us at **perception-test at google dot com**.
 
 ## Citing this work
 
 ```
-@techreport{perceptiontestv1,
-     title = {{Perception Test: A Diagnostic Benchmark for Multimodal Models}},
-     author = {Viorica Pătrăucean and Lucas Smaira and Ankush Gupta and Adrià Recasens Continente and Larisa Markeeva and Dylan Banarse and Mateusz Malinowski and Yi Yang and Carl Doersch and Tatiana Matejovicova and Yury Sulsky and AntoineMiech and Skanda Koppula and Alex Frechette and Hanna Klimczak and Raphael Koster and Junlin Zhang and StephanieWinkler and Yusuf Aytar and Simon Osindero and Dima Damen and Andrew Zisserman and João Carreira},
-     year = {2022},
-     institution = {DeepMind},
-     month = {10},
-     Date-Added = {2022-10-12}
+@misc{patraucean2023perception,
+      title={Perception Test: A Diagnostic Benchmark for Multimodal Video Models}, 
+      author={Viorica Pătrăucean and Lucas Smaira and Ankush Gupta and Adrià Recasens Continente and Larisa Markeeva and Dylan Banarse and Skanda Koppula and Joseph Heyward and Mateusz Malinowski and Yi Yang and Carl Doersch and Tatiana Matejovicova and Yury Sulsky and Antoine Miech and Alex Frechette and Hanna Klimczak and Raphael Koster and Junlin Zhang and Stephanie Winkler and Yusuf Aytar and Simon Osindero and Dima Damen and Andrew Zisserman and João Carreira},
+      year={2023},
+      eprint={2305.13786},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 ## License and disclaimer
