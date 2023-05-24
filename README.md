@@ -1,7 +1,6 @@
 # Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
 ## News
-## News
 
 - **May 14, 2023**: The ICCV challenge website is live! Visit [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/) to find out details about the workshop-challenge.
 - **May 2, 2023**: Don't miss the first Perception Test challenge, organised as an ICCV2023 workshop, taking place on October 3rd, 2023. Check the [ICCV 2023 workshops](https://iccv2023.thecvf.com/list.of.accepted.workshops-363300-4-31-33.php) page for more details.
