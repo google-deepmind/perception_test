@@ -11,12 +11,12 @@
 
 In this repository, you will find:
 * a summary of the Perception Test and the associated challenge
-* a detailed description of the data and annotations in the Perception Test
-* details about how to download the data and annotations in the Perception Test
+* a detailed description of the data and annotations in the Perception Test (interactive demo notebook [here](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb))
+* details about how to download the data and annotations in the Perception Test (download section [here](https://github.com/deepmind/perception_test#download-the-data-and-annotations))
 * metrics for evaluating the performance on the different tasks
 * simple baselines showcasing how to evaluate models on each of the tasks 
 
-**Contact**: perception-test at google dot com
+**Contact**: perception-test@google.com
 
 ## Challenge Website
 Visit [the First Perception Test Challenge website](https://ptchallenge-workshop.github.io/) for details about the challenge-workshop, available tracks, and important dates.
@@ -30,7 +30,7 @@ For more example videos in the Perception Test, check out this [playlist](https:
 
 ## Perception Test annotations
 
-**Explore the annotations**: Colab coming soon.
+**Explore the annotations**: [data_visualisation.ipynb](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb)
 
 **Summary**
 
