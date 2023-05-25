@@ -167,7 +167,7 @@ Metrics code to evaluate performance for the different tasks coming soon.
 
 ## Feedback and support
 
-If you have any questions, feedback, or require support regarding the Perception Test dataset or challenge, please contact us at **perception-test at google dot com**.
+If you have any questions, feedback, or require support regarding the Perception Test dataset or challenge, please contact us at **perception-test@google.com**.
 
 ## Citing this work
 
