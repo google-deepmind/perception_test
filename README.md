@@ -139,14 +139,15 @@ The Perception Test dataset can be downloaded as zip files containing:
 
 **Download history**
 - **May 25 2023** - We are aware of an issue with the audio files and MP4 audio, we are working to resolve this issue ASAP.
+- **May 26 2023** - Issue resolved with audio and video.
 
 **Links**
 
 | Task                      | Split  | Videos | Audio  | Labels |
 |---------------------------|--------|--------|--------|-------|
-| Sample                    | All    |   [sample_videos.zip (214.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_videos.zip)     |  Available soon      |   [sample_annotations.zip (3MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_annotations.zip)    |
-| All Tasks                 | Train  |   [train_videos.zip (26.5GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_videos.zip)     |  Available soon     |    [train_annotations.zip (30.6MB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_annotations.zip)   |
-| All Tasks                 | Valid  |   [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)     |   Available soon     |   [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
+| Sample                    | All    |  [sample_videos.zip (214.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_videos.zip)     |  [sample_audios.zip (83.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_audios.zip)     |  [sample_annotations.zip (3MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_annotations.zip)    |
+| All Tasks                 | Train  |  [train_videos.zip (26.5GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_videos.zip)      |  [train_audios.zip (12.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_audios.zip)      |  [train_annotations.zip (30.6MB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_annotations.zip)   |
+| All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
 
 ## Baselines
 
