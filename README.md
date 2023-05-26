@@ -36,12 +36,12 @@ For more example videos in the Perception Test, check out this [playlist](https:
 
 | Annotation type          | Number of videos | Number of annotations |
 |--------------------------|------------------|-----------------------|
-| Object tracks            |           11,609 |       189940        |
-| Point tracks             |              145 |          8647 |
-| Action segments          |           11,353 |             73503       |
-| Sound segments           |           11,433 |                137128    |
-| Multi-choice vQA         |           10,361 |             38060|
-| Grounded vQA             |            3,063 |                6086   |
+| Object tracks            |           11,609 |       189,940        |
+| Point tracks             |              145 |          8,647 |
+| Action segments          |           11,353 |             73,503       |
+| Sound segments           |           11,433 |                137,128    |
+| Multi-choice vQA         |           10,361 |             38,060|
+| Grounded vQA             |            3,063 |                6,086   |
 
 **Video metadata**
 
