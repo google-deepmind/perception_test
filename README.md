@@ -137,6 +137,8 @@ The Perception Test dataset can be downloaded as zip files containing:
 * audio-only files in WAV format
 * pre-computed features for the action localisation and sound localisation tasks.
 
+**Download history**
+- **May 25 2023** - We are aware of an issue with the audio files and MP4 audio, we are working to resolve this issue ASAP.
 
 **Links**
 
