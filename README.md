@@ -147,7 +147,7 @@ The Perception Test dataset can be downloaded as zip files containing:
 
 ## Baselines
 
-[Single object tracking (static baseline)](https://github.com/deepmind/perception_test/tree/main/baselines/single_object_tracking)
+[Single object tracking (static baseline)](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb)
 
 ## Metrics
 
