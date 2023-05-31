@@ -10,11 +10,11 @@
 [Perception Test: A Diagnostic Benchmark for Multimodal Video Models](https://arxiv.org/abs/2305.13786) is a multimodal benchmark designed to comprehensively evaluate the perception and reasoning skills of multimodal video models. The Perception Test dataset introduces real-world videos designed to show perceptually interesting situations and defines multiple tasks (object and point tracking, action and sound localisation, multiple-choice and grounded video question-answering) that require understanding of memory, abstract patterns, physics, and semantics, across visual, audio, and text modalities.
 
 In this repository, you will find:
-* a summary of the Perception Test and the associated challenge
-* a detailed description of the data and annotations in the Perception Test (**interactive demo notebook [here](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb)**)
-* details about how to download the data and annotations in the Perception Test (**download section [here](https://github.com/deepmind/perception_test#download-the-data-and-annotations)**)
-* metrics for evaluating the performance on the different tasks
-* simple baselines showcasing how to evaluate models on each of the tasks 
+* A summary of the Perception Test and the associated challenge
+* A detailed description of the data and annotations in the Perception Test (**interactive demo notebook [here](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb)**)
+* Details about how to download the data and annotations in the Perception Test (**download section [here](https://github.com/deepmind/perception_test#download-the-data-and-annotations)**)
+* Metrics for evaluating the performance on the different tasks
+* Dummy baselines showcasing how to evaluate models on each of the tasks 
 
 **Contact**: perception-test@google.com
 
@@ -27,6 +27,47 @@ Visit [the First Perception Test Challenge website](https://ptchallenge-workshop
 *Try the Perception Test for yourself by accessing this [quiz](https://docs.google.com/forms/d/e/1FAIpQLScp49reYMAByszH6vo_y6umlkBPwsua2-kMpGjff3IV0YzYkw/viewform?usp=sf_link).*
 
 For more example videos in the Perception Test, check out this [playlist](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R).
+
+## Download the data and annotations
+The Perception Test dataset can be downloaded as zip files containing:
+* annotations in JSON format
+* videos (including audio) as MP4 files
+* audio-only files in WAV format
+* pre-computed features for the action localisation and sound localisation tasks.
+
+**Links**
+
+| Task                      | Split  | Videos | Audio  | Labels |
+|---------------------------|--------|--------|--------|-------|
+| Sample                    | All    |  [sample_videos.zip (214.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_videos.zip)     |  [sample_audios.zip (83.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_audios.zip)     |  [sample_annotations.zip (3MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_annotations.zip)    |
+| All Tasks                 | Train  |  [train_videos.zip (26.5GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_videos.zip)      |  [train_audios.zip (12.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_audios.zip)      |  [train_annotations.zip (30.6MB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_annotations.zip)   |
+| All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
+
+## Baselines
+In this repo we provide dummy baselines to demonstrate how to load the data, evalute and recreate some results from the paper, for the other results in the paper used in the baselines, we will be adding another external repo.
+
+| Computational task       |Baseline |
+|--------------------------|------------------|
+| Object tracking            | [Static baseline](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb)       |
+| Point tracking             | Static baseline (available soon) |         
+| Multi-choice vQA           |   Frequency baseline (available soon)|
+
+
+
+## Metrics
+
+<!-- The [metrics file](https://link) contains the metric code to evaluate the performance for the different tasks. -->
+
+| Computational task       |Metric |
+|--------------------------|------------------|
+| Object tracking            |            mean IoU       |
+| Point tracking             |              Jaccard |
+| Temporal action localisation          |           mean Average Precision |            
+| Tempotal sound localisation           |           mean Average Precision |            
+| Multi-choice vQA         |           top-1 accuracy|
+| Grounded vQA             |            HOTA   |
+
+Metrics code to evaluate performance for the different tasks coming soon.
 
 ## Perception Test annotations
 
@@ -129,40 +170,6 @@ For more example videos in the Perception Test, check out this [playlist](https:
 | answers          | The answer for the question given as a list of object track_ids (corresponding to object tracks) |
 | area             | The skill area the question pertains to                 |
 | reasoning        | The type of reasoning required to answer the question   |
-
-## Download the data and annotations
-The Perception Test dataset can be downloaded as zip files containing:
-* annotations in JSON format
-* videos (including audio) as MP4 files
-* audio-only files in WAV format
-* pre-computed features for the action localisation and sound localisation tasks.
-
-**Links**
-
-| Task                      | Split  | Videos | Audio  | Labels |
-|---------------------------|--------|--------|--------|-------|
-| Sample                    | All    |  [sample_videos.zip (214.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_videos.zip)     |  [sample_audios.zip (83.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_audios.zip)     |  [sample_annotations.zip (3MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_annotations.zip)    |
-| All Tasks                 | Train  |  [train_videos.zip (26.5GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_videos.zip)      |  [train_audios.zip (12.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_audios.zip)      |  [train_annotations.zip (30.6MB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_annotations.zip)   |
-| All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
-
-## Baselines
-
-[Single object tracking (static baseline)](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb)
-
-## Metrics
-
-<!-- The [metrics file](https://link) contains the metric code to evaluate the performance for the different tasks. -->
-
-| Computational task       |Metric |
-|--------------------------|------------------|
-| Object tracking            |            mean IoU       |
-| Point tracking             |              Jaccard |
-| Temporal action localisation          |           mean Average Precision |            
-| Tempotal sound localisation           |           mean Average Precision |            
-| Multi-choice vQA         |           top-1 accuracy|
-| Grounded vQA             |            HOTA   |
-
-Metrics code to evaluate performance for the different tasks coming soon.
 
 ## Feedback and support
 
