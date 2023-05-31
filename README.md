@@ -44,7 +44,7 @@ The Perception Test dataset can be downloaded as zip files containing:
 | All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
 
 ## Baselines
-In this repo we provide dummy baselines to demonstrate how to load the data, evalute and recreate some results from the paper, for the other results in the paper used in the baselines, we will be adding another external repo.
+In this repo we provide dummy baselines to demonstrate how to load the data, evaluate and recreate some baseline results from the paper. For the other results in the baselines section in the paper, we will be adding another external repo.
 
 | Computational task       |Baseline |
 |--------------------------|------------------|
