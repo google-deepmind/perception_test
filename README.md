@@ -1,10 +1,15 @@
 # Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
 ## News
+Join the first Perception Test challenge organised as an ICCV2023 workshop, website here [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
 
-- **May 14, 2023**: The ICCV challenge website is live! Visit [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/) to find out details about the workshop-challenge.
-- **May 2, 2023**: Don't miss the first Perception Test challenge, organised as an ICCV2023 workshop, taking place on October 3rd, 2023. Check the [ICCV 2023 workshops](https://iccv2023.thecvf.com/list.of.accepted.workshops-363300-4-31-33.php) page for more details.
-- **February 9, 2023**: Recordings from the Computer Perception workshop at ECCV 2022 where we introduced the Perception Test benchmark are available on the [workshop page](https://computerperception.github.io/). Slides presenting the Perception Test and the available tasks are available [here](https://github.com/ComputerPerception/computerperception.github.io/blob/main/CoPe%20workshop%20ECCV2022.pdf).
+|                   |        |
+| ----------------          | ------------------ |
+| Download data            | [Links](https://links)      |
+| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://link), multi-choice vQA (coming soon), point tracking (coming soon), action/sound localisation (coming soon), grounded vQA (coming soon)   |
+|   Evaluation server     | Coming soon
+| Leaderboard            | Coming soon        |
+
 
 ## Overview
 [Perception Test: A Diagnostic Benchmark for Multimodal Video Models](https://arxiv.org/abs/2305.13786) is a multimodal benchmark designed to comprehensively evaluate the perception and reasoning skills of multimodal video models. The Perception Test dataset introduces real-world videos designed to show perceptually interesting situations and defines multiple tasks (object and point tracking, action and sound localisation, multiple-choice and grounded video question-answering) that require understanding of memory, abstract patterns, physics, and semantics, across visual, audio, and text modalities.
@@ -16,7 +21,7 @@ In this repository, you will find:
 * Metrics for evaluating the performance on the different tasks
 * Dummy baselines showcasing how to evaluate models on each of the tasks 
 
-**Contact**: perception-test@google.com
+
 
 ## Challenge Website
 Visit [the First Perception Test Challenge website](https://ptchallenge-workshop.github.io/) for details about the challenge-workshop, available tracks, and important dates.
