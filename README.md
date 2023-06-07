@@ -22,10 +22,6 @@ In this repository, you will find:
 * Dummy baselines showcasing how to evaluate models on each of the tasks 
 
 
-
-## Challenge Website
-Visit [the First Perception Test Challenge website](https://ptchallenge-workshop.github.io/) for details about the challenge-workshop, available tracks, and important dates.
-
 ## 5-minutes summary of the Perception Test
 [![Perception Test Overview Presentation](https://img.youtube.com/vi/8BiajMOBWdk/maxresdefault.jpg)](https://youtu.be/8BiajMOBWdk)
 
