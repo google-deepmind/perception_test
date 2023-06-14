@@ -18,7 +18,7 @@ In this repository, you will find:
 * A summary of the Perception Test and the associated challenge
 * A detailed description of the data and annotations in the Perception Test (**interactive demo notebook [here](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb)**)
 * Details about how to download the data and annotations in the Perception Test (**download section [here](https://github.com/deepmind/perception_test#download-the-data-and-annotations)**)
-* Metrics for evaluating the performance on the different tasks
+* Metrics for evaluating the performance on the different tasks (**metrics section [here](https://github.com/deepmind/perception_test#metrics)**)
 * Dummy baselines showcasing how to evaluate models on each of the tasks (**baselines section [here](https://github.com/deepmind/perception_test#baselines)**)
 
 
