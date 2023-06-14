@@ -6,7 +6,7 @@ Join the first Perception Test challenge organised as an ICCV2023 workshop, webs
 |                   |        |
 | ----------------          | ------------------ |
 | Download data            | [Download section](https://github.com/deepmind/perception_test#download-the-data-and-annotations) below      |
-| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [multi-choice vQA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), point tracking (coming soon), action/sound localisation (coming soon), grounded vQA (coming soon)   |
+| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [multiple-choice vQA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), point tracking (coming soon), action/sound localisation (coming soon), grounded vQA (coming soon)   |
 |   Evaluation server     | Coming soon
 | Leaderboard            | Coming soon        |
 
@@ -49,10 +49,9 @@ In this repo we provide dummy baselines to demonstrate how to load the data, eva
 
 | Computational task       |Baseline |
 |--------------------------|------------------|
-| Object tracking            | [Static baseline](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb)       |
-| Point tracking             | Static baseline (available soon) |         
-| Multi-choice vQA           |   Frequency baseline (available soon)|
-
+| Object tracking            | [Static baseline](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb)       |         
+| Multiple-choice vQA           |   [Frequency dummy baseline](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb) |
+| Point tracking             | Static baseline (available soon) |
 
 
 ## Metrics
