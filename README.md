@@ -6,7 +6,7 @@ Join the first Perception Test challenge organised as an ICCV2023 workshop, webs
 |                   |        |
 | ----------------          | ------------------ |
 | Download data            | [Links](https://links)      |
-| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://link), [multi-choice vQA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), point tracking (coming soon), action/sound localisation (coming soon), grounded vQA (coming soon)   |
+| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb)), [multi-choice vQA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), point tracking (coming soon), action/sound localisation (coming soon), grounded vQA (coming soon)   |
 |   Evaluation server     | Coming soon
 | Leaderboard            | Coming soon        |
 
