@@ -3,7 +3,6 @@
 ## News
 Join the first Perception Test challenge organised as an ICCV2023 workshop, website here [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
 
-|                   |        |
 | ----------------          | ------------------ |
 | Download data            | [Download section](https://github.com/deepmind/perception_test#download-the-data-and-annotations) below      |
 | Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [multiple-choice video QA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), point tracking (coming soon), action/sound localisation (coming soon), grounded video QA (coming soon)   |
