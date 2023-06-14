@@ -6,7 +6,7 @@ Join the first Perception Test challenge organised as an ICCV2023 workshop, webs
 |                   |        |
 | ----------------          | ------------------ |
 | Download data            | [Download section](https://github.com/deepmind/perception_test#download-the-data-and-annotations) below      |
-| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [multiple-choice vQA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), point tracking (coming soon), action/sound localisation (coming soon), grounded vQA (coming soon)   |
+| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [multiple-choice video QA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), point tracking (coming soon), action/sound localisation (coming soon), grounded vQA (coming soon)   |
 |   Evaluation server     | Coming soon
 | Leaderboard            | Coming soon        |
 
@@ -19,7 +19,7 @@ In this repository, you will find:
 * A detailed description of the data and annotations in the Perception Test (**interactive demo notebook [here](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb)**)
 * Details about how to download the data and annotations in the Perception Test (**download section [here](https://github.com/deepmind/perception_test#download-the-data-and-annotations)**)
 * Metrics for evaluating the performance on the different tasks
-* Dummy baselines showcasing how to evaluate models on each of the tasks 
+* Dummy baselines showcasing how to evaluate models on each of the tasks (**baselines section [here](https://github.com/deepmind/perception_test#baselines)**)
 
 
 ## 5-minutes summary of the Perception Test
