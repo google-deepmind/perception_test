@@ -1,7 +1,7 @@
 # Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
 ## News
-**Our first challenge track for multiple-choice video QA is now open! Head over to the [challenge page](https://eval.ai/web/challenges/challenge-page/2091/overview) to find out more.**
+**06/19/2023 - The challenge track for multiple-choice video QA is now open! Head over to the [challenge page](https://eval.ai/web/challenges/challenge-page/2091/overview) to find out more.**
 
 Join the first Perception Test challenge organised as an ICCV2023 workshop, website here [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
 |  |  |
