@@ -42,6 +42,8 @@ The Perception Test dataset can be downloaded as zip files containing:
 | All Tasks                 | Train  |  [train_videos.zip (26.5GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_videos.zip)      |  [train_audios.zip (12.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_audios.zip)      |  [train_annotations.zip (30.6MB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_annotations.zip)   |
 | All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
 
+
+
 ## Baselines
 In this repo we provide dummy baselines to demonstrate how to load the data, evaluate and recreate some baseline results from the paper. For the other results in the baselines section in the paper, we will be adding another external repo.
 
@@ -85,89 +87,95 @@ Metrics code to evaluate performance for the different tasks coming soon.
 **Video metadata**
 
 
-| Field Name          | Description                                               |
-|---------------------|-----------------------------------------------------------|
-| split               | The data split the video belongs to                        |
-| video_id            | The ID of the video                                       |
-| frame_rate          | The frame rate of the video in frames per second           |
-| num_frames          | The total number of frames in the video                    |
-| resolution          | The height and width of the video in pixels                |
-| audio_samples       | The total number of audio samples in the video             |
-| audio_sample_rate   | The sample rate of the audio in the video in Hz            |
-| is_cup_game         | Whether the video shows a cups-game or not                 |
-| is_camera_moving    | Whether the camera used to film the video is moving or not |
+| Field Name         | Description                                                      |
+|--------------------|------------------------------------------------------------------|
+| split              | The data split the video belongs to, one of ['train','valid','test']. |
+| video_id           | The ID of the video ['video_xxxx'].                              |
+| frame_rate         | The frame rate of the video in frames per second.                |
+| num_frames         | The total number of frames in the video.                          |
+| resolution         | The height and width of the video in pixels.                      |
+| audio_samples      | The total number of audio samples in the video.                   |
+| audio_sample_rate  | The sample rate of the audio in the video in Hz.                  |
+| is_cup_game        | Whether the video shows a cups-game or not, see paper for details.|
+| is_camera_moving   | Whether the camera used to film the video is moving or not.       |
+
 
 
 **Object tracks**
 
-| Field Name             | Description                                                             |
-|------------------------|-------------------------------------------------------------------------|
-| task_id                | A unique annotation ID for each object track                             |
-| label                  | The name of the object, can also contain object attributes               |
-| is_occluder            | Whether the object occludes other objects in the video                    |
-| bounding_boxes         | The coordinates of the object's bounding boxes (collected at 1fps)                              |
-| initial_tracking_box   | One-hot vector indicating which box annotation should be used to start tracking |
-| frame_ids              | The IDs of the frames that are annotated                                  |
-| timestamps             | The timestamps of the annotated frames in ms                             |
-| is_masked              | Whether the object is masked in the annotated frame                       |
+| Field Name             | Description                                                                        |
+|------------------------|------------------------------------------------------------------------------------|
+| id                     | A unique annotation ID for each object track                                         |
+| label                  | The name of the object, can also contain object attributes, e.g. red box.           |
+| is_occluder            | Whether the object occludes other objects in the video (This is valid only for the cups-games videos). |
+| bounding_boxes         | The coordinates of the object's bounding box in the format [x1,y1,x2,y2] shape [n,4] where n is the number of annotated frames. |
+| initial_tracking_box   | one-hot vector indicating which box annotation should be used to start the tracking for this object [n]. |
+| frame_ids              | The IDs of the frames that are annotated, normally 1 per second, e.g. 0, 30, 60, etc. shape [n]. |
+| timestamps             | The timestamps of the annotated frames in ms. shape [n].                             |
+| is_masked              | Whether the object is masked in the annotated frame, corresponds to the bounding boxes [n] ( This is valid only for the cups-games videos). |
+
 
 **Point tracks**
 
-| Field Name       | Description                                       |
-|------------------|---------------------------------------------------|
-| task_id          | A unique annotation ID for each point track       |
-| label            | The label of the point track                      |
-| parent_objects   | The track_id of the object that the point belongs to |
-| frame_ids        | The IDs of the frames that are annotated          |
-| points           | The coordinates of the points (collected at 30fps)                      |
+| Field Name         | Description                                           |
+|--------------------|-------------------------------------------------------|
+| id                 | A unique annotation ID for each point track.            |
+| label              | The label of the point track.                           |
+| parent_objects     | The id of the object that the point belongs to.         |
+| frame_ids          | The IDs of the frames that are annotated, normally 0, 1, 2 etc. shape [N], where N is the total number of points in the track. |
+| points             | The coordinates of the points in [y,x], shape [N, 2]. |
 
 **Action segments**
 
-| Field Name        | Description                                      |
-|-------------------|--------------------------------------------------|
-| task_id           | A unique annotation ID for each action segment   |
-| label             | The templated class of the action segment        |
-| parent_objects    | The task_ids of the objects involved in the action |
-| timestamps        | The start and end timestamps of the action segment |
-| frame_ids         | The start and end frame IDs of the action segment |
-| label_id          | A unique class ID for each label in the dataset  |
+| Field Name         | Description                                                          |
+|--------------------|----------------------------------------------------------------------|
+| id                 | A unique annotation ID for each action segment.                       |
+| label              | The templated class of the action segment, e.g. Putting something into something. |
+| parent_objects     | The ids of the objects involved in the action, can be empty, single, multiple or -1 for an object not annotated. |
+| timestamps         | The start and end timestamps of the action segment in ms [start time, end time]. |
+| frame_ids          | The start and end frame IDs of the action segment [start frame, end frame]. |
+| label_id           | A unique class ID for each label in the dataset.                      |
+
 
 
 **Sound segments**
 
-| Field Name        | Description                                      |
-|-------------------|--------------------------------------------------|
-| id                | A unique annotation ID for each sound segment    |
-| label             | The name or class of the sound segment           |
-| parent_objects    | The object task_ids related to this sound segment |
-| timestamps        | The start and end timestamps of the sound segment |
-| frame_ids         | The start and end frame IDs of the sound segment  |
-| is_visible        | Whether the objects causing the sound in this segment are visible or not |
-| label_id          | A unique class ID for each label in the dataset  |
+| Field Name         | Description                                                              |
+|--------------------|--------------------------------------------------------------------------|
+| id                 | A unique annotation ID for each sound segment.                             |
+| label              | The name or class of the sound segment.                                    |
+| parent_objects     | The object ids related to this sound segment, can be empty, single, multiple or -1 for an object not annotated. |
+| timestamps         | The start and end timestamps of the sound segment in ms [start time, end time]. |
+| frame_ids          | The start and end frame IDs of the sound segment [start frame, end frame]. |
+| is_visible         | Whether the objects causing the sound in this segment are visible or not, e.g. if an object falls off the table and the impact point with the floor is occluded, then is_visible=False. |
+| label_id           | A unique class ID for each label in the dataset.                            |
+
 
 
 **Multiple-choice video question-answers**
 
-| Field Name       | Description                                             |
-|------------------|---------------------------------------------------------|
-| task_id          | A unique annotation ID for each question                |
-| question         | The text of the question                                |
-| options          | The 3 possible options for the question, only 1 is correct                   |
-| answer_id        | The ID of the correct option for the question           |
-| area             | The skill area the question pertains to                 |
-| reasoning        | The type of reasoning required to answer the question   |
-| tags              | Different skills involved in answering the given question |
+| Field Name         | Description                                                      |
+|--------------------|------------------------------------------------------------------|
+| id                 | A unique annotation ID for each question.                         |
+| question           | The text of the question.                                         |
+| options            | The possible options for the question. There are 3 possible options, and only one is correct. |
+| answer_id          | The ID of the correct option for the question.                    |
+| area               | The skill area the question pertains to. Can be Memory, Abstraction, Physics, Semantics. |
+| reasoning          | The type of reasoning required to answer the question. Can be Descriptive, Explanatory, Predictive, or Counterfactual. |
+| tag                | Different skills involved in answering the given question. A question can have multiple skill tags. |
+
 
 
 **Grounded video question-answers**
 
-| Field Name       | Description                                             |
-|------------------|---------------------------------------------------------|
-| task_id          | A unique annotation ID for each question                |
-| question         | The text of the question                                |
-| answers          | The answer for the question given as a list of object track_ids (corresponding to object tracks) |
-| area             | The skill area the question pertains to                 |
-| reasoning        | The type of reasoning required to answer the question   |
+| Field Name         | Description                                                      |
+|--------------------|------------------------------------------------------------------|
+| id                 | A unique annotation ID for each question.                         |
+| question           | The text of the question.                                         |
+| answers            | The answer for the question given as a list of object ids.        |
+| area               | The skill area the question pertains to. Can be Memory, Abstraction, Physics, Semantics. |
+| reasoning          | The type of reasoning required to answer the question. Can be Descriptive, Explanatory, Predictive, or Counterfactual. |
+
 
 ## Feedback and support
 
