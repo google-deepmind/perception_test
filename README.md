@@ -5,8 +5,8 @@ Join the first Perception Test challenge organised as an ICCV2023 workshop, webs
 |  |  |
 |-----|----|
 | Download data            | [Download section](https://github.com/deepmind/perception_test#download-the-data-and-annotations) below      |
-| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [multiple-choice video QA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), point tracking (coming soon), action/sound localisation (coming soon), grounded video QA (coming soon)   |
-|   Evaluation server and leaderboard     | [multiple-choice video QA](https://eval.ai/web/challenges/challenge-page/2091/overview), object tracking (coming soon), point tracking (coming soon), action/sound localisation (coming soon), grounded video QA (coming soon)
+| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [multiple-choice video QA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), point tracking (coming soon), [action/sound localisation](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_action_localisation.ipynb), grounded video QA (coming soon)   |
+|   Evaluation server and leaderboard     | [multiple-choice video QA](https://eval.ai/web/challenges/challenge-page/2091/overview), [single object tracking](https://eval.ai/web/challenges/challenge-page/2094/overview), point tracking (coming soon), action/sound localisation (coming soon), grounded video QA (coming soon)
 
 
 ## Overview
