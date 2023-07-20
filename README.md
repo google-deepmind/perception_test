@@ -28,6 +28,9 @@ In this repository, you will find:
 For more example videos in the Perception Test, check out this [playlist](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R).
 
 ## Download the data and annotations
+
+*Test annotations will be released August 1st as part of the challenge phases.*
+
 The Perception Test dataset can be downloaded as zip files containing:
 * annotations in JSON format
 * videos (including audio) as MP4 files
@@ -41,6 +44,35 @@ The Perception Test dataset can be downloaded as zip files containing:
 | Sample                    | All    |  [sample_videos.zip (214.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_videos.zip)     |  [sample_audios.zip (83.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_audios.zip)     |  [sample_annotations.zip (3MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_annotations.zip)    |
 | All Tasks                 | Train  |  [train_videos.zip (26.5GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_videos.zip)      |  [train_audios.zip (12.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_audios.zip)      |  [train_annotations.zip (30.6MB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_annotations.zip)   |
 | All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
+
+
+**Challenge Downloads**
+
+**Multi-Choice vQA**\
+Challenge link: [https://eval.ai/web/challenges/challenge-page/2091/overview](https://eval.ai/web/challenges/challenge-page/2091/overview)
+
+| Task                      | Split  | Videos | Audio  | Labels |
+|---------------------------|--------|--------|--------|-------|
+| Multi-Choice vQA          | Train  |  Use full split download above   | Use full split download above |  [mc_question_train_annotations.zip (85kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_train_annotations.zip)   |
+| Multi-Choice vQA          | Valid   |  Use full split download above   | Use full split download above |  [mc_question_valid_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_valid_annotations.zip)   |
+
+
+**Single Object Tracking**\
+Challenge link: [https://eval.ai/web/challenges/challenge-page/2094/overview](https://eval.ai/web/challenges/challenge-page/2094/overview)
+
+| Task                      | Split  | Videos | Audio  | Labels |
+|---------------------------|--------|--------|--------|-------|
+| Single Object Tracking     | Train  | Use full split download above    |  N/A   |  Use full split download above   |
+| Single Object Tracking     | Valid  |  [sot_valid_videos_challenge2023.zip (11.6GB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_valid_videos_challenge2023.zip)      |  N/A    |  [sot_valid_annotations_challenge2023.zip (9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_valid_annotations_challenge2023.zip)    |
+
+
+**Temporal Action Localisation**\
+Challenge link: [https://eval.ai/web/challenges/challenge-page/2101/overview](https://eval.ai/web/challenges/challenge-page/2101/overview)
+
+| Task                      | Split  | Videos | Audio  | Labels | Video Features (TSP) | 
+|---------------------------|--------|--------|--------|-------|----------|
+| Temporal Action Localisation          | Train  |  Use full split download above   | Use full split download above |  [action_localisation_train_annotations.zip (217kB)](https://storage.googleapis.com/dm-perception-test/zip_data/action_localisation_train_annotations.zip)   | [action_localisation_train_video_features.zip (81.7MB)](https://storage.googleapis.com/dm-perception-test/zip_data/action_localisation_train_video_features.zip)    |
+| Temporal Action Localisation          | Valid   |  Use full split download above   | Use full split download above |  [action_localisation_valid_annotations.zip (593kB)](https://storage.googleapis.com/dm-perception-test/zip_data/action_localisation_valid_annotations.zip)   | [action_localisation_valid_video_features.zip (219.2MB)](https://storage.googleapis.com/dm-perception-test/zip_data/action_localisation_valid_video_features.zip)     |
 
 
 
