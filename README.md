@@ -5,8 +5,8 @@ Join the first Perception Test challenge organised as an ICCV2023 workshop, webs
 |  |  |
 |-----|----|
 | Download data            | [Download section](https://github.com/deepmind/perception_test#download-the-data-and-annotations) below      |
-| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [Object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [multiple-choice video QA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), point tracking (coming soon), [action/sound localisation](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_action_localisation.ipynb), grounded video QA (coming soon)   |
-|   Evaluation server and leaderboard     | [multiple-choice video QA](https://eval.ai/web/challenges/challenge-page/2091/overview), [single object tracking](https://eval.ai/web/challenges/challenge-page/2094/overview), point tracking (coming soon), action/sound localisation (coming soon), grounded video QA (coming soon)
+| Evaluation scripts (including data loader, dummy baseline, evaluation metrics)               | [multiple-choice video QA](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb), [object tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb), [action localisation](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_action_localisation.ipynb), [point tracking](https://github.com/deepmind/perception_test/blob/main/baselines/single_point_tracking.ipynb), sound_localisation (coming soon), grounded video QA (coming soon)   |
+|   Evaluation server and leaderboard     | [multiple-choice video QA](https://eval.ai/web/challenges/challenge-page/2091/overview), [object tracking](https://eval.ai/web/challenges/challenge-page/2094/overview), [action localisation](https://eval.ai/web/challenges/challenge-page/2101/overview), [point tracking](https://eval.ai/web/challenges/challenge-page/2108/overview), sound localisation (coming soon), grounded video QA (coming soon)
 
 
 ## Overview
