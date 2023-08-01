@@ -1,6 +1,8 @@
 # Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
 ## News
+Test Splits are now live for the challenges! For Downloads see [download section](https://github.com/deepmind/perception_test#download-the-data-and-annotations).
+
 Join the first Perception Test challenge organised as an ICCV2023 workshop, website here [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
 |  |  |
 |-----|----|
@@ -44,6 +46,7 @@ The Perception Test dataset can be downloaded as zip files containing:
 | Sample                    | All    |  [sample_videos.zip (214.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_videos.zip)     |  [sample_audios.zip (83.9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_audios.zip)     |  [sample_annotations.zip (3MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sample_annotations.zip)    |
 | All Tasks                 | Train  |  [train_videos.zip (26.5GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_videos.zip)      |  [train_audios.zip (12.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_audios.zip)      |  [train_annotations.zip (30.6MB)](https://storage.googleapis.com/dm-perception-test/zip_data/train_annotations.zip)   |
 | All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
+| All Tasks                 | Test  |  [test_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_videos.zip)      |  [test_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_audios.zip)      |  [test_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_annotations.zip)    |
 
 
 **Challenge Downloads**
@@ -55,6 +58,7 @@ Challenge link: [https://eval.ai/web/challenges/challenge-page/2091/overview](ht
 |---------------------------|--------|--------|--------|-------|
 | Multi-Choice vQA          | Train  |  Use full split download above   | Use full split download above |  [mc_question_train_annotations.zip (85kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_train_annotations.zip)   |
 | Multi-Choice vQA          | Valid   |  Use full split download above   | Use full split download above |  [mc_question_valid_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_valid_annotations.zip)   |
+| Multi-Choice vQA          | Test   |  Use full split download above   | Use full split download above |  [mc_question_test_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_test_annotations.zip)   |
 
 
 **Single Object Tracking**\
@@ -64,6 +68,7 @@ Challenge link: [https://eval.ai/web/challenges/challenge-page/2094/overview](ht
 |---------------------------|--------|--------|--------|-------|
 | Single Object Tracking     | Train  | Use full split download above    |  N/A   |  Use full split download above   |
 | Single Object Tracking     | Valid  |  [sot_valid_videos_challenge2023.zip (11.6GB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_valid_videos_challenge2023.zip)      |  N/A    |  [sot_valid_annotations_challenge2023.zip (9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_valid_annotations_challenge2023.zip)    |
+
 
 
 **Temporal Action Localisation**\
