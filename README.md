@@ -50,32 +50,23 @@ The Perception Test dataset can be downloaded as zip files containing:
 | All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
 | All Tasks                 | Test  |  [test_videos.zip (41.8GB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_videos.zip)      |  [test_audios.zip (19.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_audios.zip)      |  [test_annotations.zip (633.9kB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_annotations.zip)    |
 
+*In test videos, where the end of the video contains semantic information we cut the relevant frames from the video. This does not affect the majority of videos in the validation split. For the validation set we also provide clipped videos in this way: [cut_valid_videos.zip (68.6GB)](https://storage.googleapis.com/dm-perception-test/zip_data/cut_valid_videos.zip). 
+
+
 **Video IDs**
 
 | Computational task         | Challenge valid video IDs | Challenge test video IDs |
 |---------------------------|--------------------------|--------------------------|
 | Single Object Tracking|[object_tracking_valid_subset_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/object_tracking_valid_subset_id_list.csv)|[object_tracking_test_subset_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/object_tracking_test_subset_id_list.csv)|
-| Multiple-Choice Video QA|[mc_question_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/mc_question_valid_id_list.csv)|[mc_question_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/mc_question_test_id_list.csv)|
 | Single Point Tracking|[point_tracking_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/point_tracking_valid_id_list.csv)|[point_tracking_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/point_tracking_test_id_list.csv)|
 | Temporal Action Localisation |[localisation_challenge_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/localisation_challenge_valid_id_list.csv)|[localisation_challenge_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/localisation_challenge_test_id_list.csv)|
 | Temporal Sound Localisation  |[localisation_challenge_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/localisation_challenge_valid_id_list.csv)|[localisation_challenge_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/localisation_challenge_test_id_list.csv)|
+| Multiple-Choice Video QA|[mc_question_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/mc_question_valid_id_list.csv)|[mc_question_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/mc_question_test_id_list.csv)|
 | Grounded Video QA        |[grounded_question_valid_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/grounded_question_valid_id_list.csv)|[grounded_question_test_id_list.csv](https://storage.googleapis.com/dm-perception-test/misc/grounded_question_test_id_list.csv)|
 
 
 
 **Challenge Downloads**
-
-**Multi-Choice vQA**\
-Challenge link: [https://eval.ai/web/challenges/challenge-page/2091/overview](https://eval.ai/web/challenges/challenge-page/2091/overview)
-
-| Task                      | Split  | Videos | Audio  | Labels |
-|---------------------------|--------|--------|--------|-------|
-| Multiple-Choice video QA          | Train  |  Use full split download above   | Use full split download above |  [mc_question_train_annotations.zip (85kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_train_annotations.zip)   |
-| Multiple-Choice video QA          | Valid   |  Use full split download above   | Use full split download above |  [mc_question_valid_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_valid_annotations.zip)   |
-| Multiple-Choice video QA          | Test   |  Use full split download above   | Use full split download above |  [mc_question_test_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_test_annotations.zip)   |
-
-
-
 **Single Object Tracking**\
 Challenge link: [https://eval.ai/web/challenges/challenge-page/2094/overview](https://eval.ai/web/challenges/challenge-page/2094/overview)
 
@@ -85,6 +76,15 @@ Challenge link: [https://eval.ai/web/challenges/challenge-page/2094/overview](ht
 | Single Object Tracking     | Valid  |  [sot_valid_videos_challenge2023.zip (11.6GB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_valid_videos_challenge2023.zip)      |  N/A    |  [sot_valid_annotations_challenge2023.zip (9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_valid_annotations_challenge2023.zip)    |
 | Single Object Tracking     | Test  |  [sot_test_videos_challenge2023.zip (12.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_test_videos_challenge2023.zip)      |  N/A    |  [sot_test_annotations_challenge2023.zip (613kB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_test_annotations_challenge2023.zip)    |
 
+
+**Single Point Tracking**\
+Challenge link: [https://eval.ai/web/challenges/challenge-page/2108/overview](https://eval.ai/web/challenges/challenge-page/2108/overview)
+
+| Task                      | Split  | Videos | Audio  | Labels |
+|---------------------------|--------|--------|--------|-------|
+| Single Point Tracking     | Train  | [point_tracking_train_videos.zip (398.4MB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_train_videos.zip)    |  N/A   | [point_tracking_train_annotations.zip (4.7MB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_train_annotations.zip)    |
+| Single Point Tracking     | Valid  |  [point_tracking_valid_videos.zip (1.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_valid_videos.zip)    |  N/A   | [point_tracking_valid_annotations.zip (11.1MB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_valid_annotations.zip)    |
+| Single Point Tracking     | Test  |  [point_tracking_test_videos.zip (691MB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_test_videos.zip)    |  N/A   | [point_tracking_test_annotations.zip (42.2kB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_test_annotations.zip)    |
 
 
 **Temporal Action Localisation**\
@@ -105,8 +105,26 @@ Challenge link: [https://eval.ai/web/challenges/challenge-page/2109/overview](ht
 |---------------------------|--------|--------|--------|-------|----------|
 | Temporal Sound Localisation          | Train  |  Use full split download above   | Use full split download above |  [sound_localisation_train_annotations.zip (363kB)](https://storage.googleapis.com/dm-perception-test/zip_data/action_localisation_train_annotations.zip)   | [sound_localisation_train_audio_features.zip (109.1MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_train_audio_features.zip)    |
 | Temporal Sound Localisation          | Valid   |  Use full split download above   | Use full split download above |  [challenge_sound_localisation_valid_annotations.zip (552kB)](https://storage.googleapis.com/dm-perception-test/zip_data/challenge_sound_localisation_valid_annotations.zip)   | [sound_localisation_valid_audio_features.zip (291.4MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_valid_sound_features.zip)     |
-| Temporal Sound Localisation          | Test   |  Use full split download above   | Use full split download above | N/A | [action_localisation_test_video_features.zip (131.7MB)](https://storage.googleapis.com/dm-perception-test/zip_data/action_localisation_test_video_features.zip)     |
+| Temporal Sound Localisation          | Test   |  Use full split download above   | Use full split download above | N/A | [sound_localisation_test_video_features.zip (177.2MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_test_audio_features.zip)     |
 
+
+**Multiple-Choice Video QA**\
+Challenge link: [https://eval.ai/web/challenges/challenge-page/2091/overview](https://eval.ai/web/challenges/challenge-page/2091/overview)
+
+| Task                      | Split  | Videos | Audio  | Labels |
+|---------------------------|--------|--------|--------|-------|
+| Multiple-Choice Video QA          | Train  |  Use full split download above   | Use full split download above |  [mc_question_train_annotations.zip (85kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_train_annotations.zip)   |
+| Multiple-Choice Video QA          | Valid   |  Use full split download above   | Use full split download above |  [mc_question_valid_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_valid_annotations.zip)   |
+| Multiple-Choice Video QA          | Test   |  Use full split download above   | Use full split download above |  [mc_question_test_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_test_annotations.zip)   |
+
+**Grounded Video QA**\
+Challenge link: [https://eval.ai/web/challenges/challenge-page/2110/overview](https://eval.ai/web/challenges/challenge-page/2110/overview)
+
+| Task                      | Split  | Videos | Audio  | Labels |
+|---------------------------|--------|--------|--------|-------|
+| Grounded Video QA         | Train  | [grounded_question_train_videos.zip (7.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_train_videos.zip) | [grounded_question_train_audios.zip (3.4GB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_train_audios.zip) | [grounded_question_train_annotations.zip (6.1MB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_train_annotations.zip)   |
+| Grounded Video QA         | Valid  | [grounded_question_valid_videos.zip (19.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_valid_videos.zip) | [grounded_question_valid_audios.zip (9.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_valid_audios.zip) | [grounded_question_valid_annotations.zip (16.8MB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_valid_annotations.zip)   |
+| Grounded Video QA         | Test  | [grounded_question_test_videos.zip (11.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_test_videos.zip) | | [grounded_question_test_annotations.zip (17.5kB)](https://storage.googleapis.com/dm-perception-test/zip_data/grounded_question_test_annotations.zip)   |
 
 
 
@@ -116,10 +134,10 @@ In this repo we provide dummy baselines to demonstrate how to load the data, eva
 | Computational task         | Baseline                                                           | Description |
 |---------------------------|-------------------------------------------------------------------|-------------|
 | Single Object Tracking    | [Static](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb) | Static track baseline. |
-| Multiple-Choice Video QA   | [Frequency](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb)           | Frequency baseline using prior question/answer pairs. More detail is provided in the paper. |
 | Single Point Tracking     | [Static](https://github.com/deepmind/perception_test/blob/main/baselines/single_point_tracking.ipynb) | Static point baseline. |
 | Temporal Action Localisation | [ActionFormer](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_action_localisation.ipynb) | [ActionFormer model](https://github.com/ptchallenge-workshop/actionformer_release_PT) trained on Perception Test data. |
 | Temporal Sound Localisation  | [ActionFormer](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_sound_localisation.ipynb) | [ActionFormer model](https://github.com/ptchallenge-workshop/actionformer_release_PT) trained on Perception Test data. |
+| Multiple-Choice Video QA   | [Frequency](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb)           | Frequency baseline using prior question/answer pairs. More detail is provided in the paper. |
 | Grounded Video QA        | [MDETR + static](https://github.com/deepmind/perception_test/blob/main/baselines/grounded_vqa.ipynb)       | [MDETR](https://github.com/facebookresearch/multimodal/tree/main) for open-vocabulary object detection with static tracks assumed from detection. |
 
 
@@ -134,9 +152,9 @@ In this repo we provide dummy baselines to demonstrate how to load the data, eva
 |--------------------------|------------------|
 | Single Object Tracking            |            Average IoU  |
 | Single Point Tracking             |              [Average Jaccard](https://arxiv.org/pdf/2211.03726.pdf) |
-| Temporal Action Localisation          |           mean Average Precision |            
-| Temporal Sound Localisation           |           mean Average Precision |            
-| Multiple-Choice Video QA         |           top-1 accuracy|
+| Temporal Action Localisation          |           Mean Average Precision |            
+| Temporal Sound Localisation           |           Mean Average Precision |            
+| Multiple-Choice Video QA         |           Top-1 Accuracy|
 | Grounded Video QA             |            [HOTA](https://arxiv.org/pdf/2009.07736.pdf)   |
 
 Metrics code to evaluate performance for the different tasks coming soon.
@@ -244,7 +262,7 @@ Metrics code to evaluate performance for the different tasks coming soon.
 |--------------------|------------------------------------------------------------------|
 | id                 | A unique annotation ID for each question.                         |
 | question           | The text of the question.                                         |
-| answers            | The answer for the question given as a list of object ids.        |
+| answers            | The answer for the question given as a list of IDs, these relate to single object tracking annotation IDs, specifically the 'id' field for a given object in the same video.        |
 | area               | The skill area the question pertains to. Can be Memory, Abstraction, Physics, Semantics. |
 | reasoning          | The type of reasoning required to answer the question. Can be Descriptive, Explanatory, Predictive, or Counterfactual. |
 
