@@ -84,11 +84,17 @@ Challenge link: [https://eval.ai/web/challenges/challenge-page/2101/overview](ht
 ## Baselines
 In this repo we provide dummy baselines to demonstrate how to load the data, evaluate and recreate some baseline results from the paper. For the other results in the baselines section in the paper, we will be adding another external repo.
 
-| Computational task       |Baseline |
-|--------------------------|------------------|
-| Object tracking            | [Static baseline](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb)       |         
-| Multiple-choice video QA           |   [Frequency dummy baseline](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb) |
-| Point tracking             | Static baseline (available soon) |
+| Computational task         | Baseline                                                           | Description |
+|---------------------------|-------------------------------------------------------------------|-------------|
+| Single Object Tracking    | [Static](https://github.com/deepmind/perception_test/blob/main/baselines/single_object_tracking.ipynb) | Static track baseline. |
+| Multiple-Choice Video QA   | [Frequency](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb)           | Frequency baseline using prior question/answer pairs. More detail is provided in the paper. |
+| Single Point Tracking     | [Static](https://github.com/deepmind/perception_test/blob/main/baselines/single_point_tracking.ipynb) | Static point baseline. |
+| Temporal Action Localisation | [ActionFormer](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_action_localisation.ipynb) | [ActionFormer model](https://github.com/ptchallenge-workshop/actionformer_release_PT) trained on Perception Test data. |
+| Temporal Sound Localisation  | [ActionFormer](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_sound_localisation.ipynb) | [ActionFormer model](https://github.com/ptchallenge-workshop/actionformer_release_PT) trained on Perception Test data. |
+| Grounded Video QA        | [MDETR + static](https://github.com/deepmind/perception_test/blob/main/baselines/grounded_vqa.ipynb)       | [MDETR](https://github.com/facebookresearch/multimodal/tree/main) for open-vocabulary object detection with static tracks assumed from detection. |
+
+
+
 
 
 ## Metrics
