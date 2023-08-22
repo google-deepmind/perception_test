@@ -1,6 +1,6 @@
 # Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
-## News
+# News
 Test Splits are now available for all the challenges! For Downloads see [download section](https://github.com/deepmind/perception_test#download-the-data-and-annotations).
 
 Join the first Perception Test challenge organised as an ICCV2023 workshop, website here [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
@@ -13,7 +13,7 @@ Join the first Perception Test challenge organised as an ICCV2023 workshop, webs
 |   Challenges and evaluation servers     | [multiple-choice video QA](https://eval.ai/web/challenges/challenge-page/2091/overview), [object tracking](https://eval.ai/web/challenges/challenge-page/2094/overview), [action localisation](https://eval.ai/web/challenges/challenge-page/2101/overview), [point tracking](https://eval.ai/web/challenges/challenge-page/2108/overview), [sound localisation](https://eval.ai/web/challenges/challenge-page/2109/overview), [grounded video QA](https://eval.ai/web/challenges/challenge-page/2110/overview)
 
 
-## Overview
+# Overview
 [Perception Test: A Diagnostic Benchmark for Multimodal Video Models](https://arxiv.org/abs/2305.13786) is a multimodal benchmark designed to comprehensively evaluate the perception and reasoning skills of multimodal video models. The Perception Test dataset introduces real-world videos designed to show perceptually interesting situations and defines multiple tasks (object and point tracking, action and sound localisation, multiple-choice and grounded video question-answering) that require understanding of memory, abstract patterns, physics, and semantics, across visual, audio, and text modalities.
 
 In this repository, you will find:
@@ -31,7 +31,7 @@ In this repository, you will find:
 
 For more example videos in the Perception Test, check out this [playlist](https://youtube.com/playlist?list=PLbMStx8-UPhbaKViNMF8ZcQpyzVhwJC3R).
 
-## Download the data and annotations
+# Download the data and annotations
 
 The Perception Test dataset can be downloaded as zip files containing:
 * annotations in JSON format
@@ -39,7 +39,7 @@ The Perception Test dataset can be downloaded as zip files containing:
 * audio-only files in WAV format
 * pre-computed features for the action localisation and sound localisation tasks.
 
-**Full Splits**
+## Full Dataset Splits
 
 | Task                      | Split  | Videos | Audio  | Labels |
 |---------------------------|--------|--------|--------|-------|
@@ -48,10 +48,14 @@ The Perception Test dataset can be downloaded as zip files containing:
 | All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
 | All Tasks                 | Test  |  [test_videos.zip (41.8GB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_videos.zip)      |  [test_audios.zip (19.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_audios.zip)      |  [test_annotations.zip (633.9kB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_annotations.zip)    |
 
-*In test videos, where the end of the video gives away the answer to some questions (e.g. in cup-games, where is the hidden object at the end), we cut the end of the video. For the validation split, we provide the full videos, together with the frame id where the cut should be made [cut_valid_videos.zip (68.6GB)](https://storage.googleapis.com/dm-perception-test/zip_data/cut_valid_videos.zip). 
+*In test videos, where the end of the video gives away the answer to some questions (e.g. in cup-games, where is the hidden object at the end), we cut the end of the video. For the validation split, we provide the frame id where the cut should be made: [cut_frame_mapping_valid.json](https://storage.googleapis.com/dm-perception-test/misc/cut_frame_mapping_valid.json). 
 
+
+## Challenge Downloads
 
 **Video IDs**
+Since some of the challenges use subsets of the datasets, we provide lists of video IDs for each challenge, these can be used to filter the videos/audios/annotations from the full splits above. 
+For single object tracking, single point tracking and grounded video QA we provide separate zip files since the subsets are much smaller than the full dataset.
 
 | Computational task         | Challenge valid video IDs | Challenge test video IDs |
 |---------------------------|--------------------------|--------------------------|
@@ -64,14 +68,14 @@ The Perception Test dataset can be downloaded as zip files containing:
 
 
 
-**Challenge Downloads**
+
 
 **Single Object Tracking**\
 Challenge link: [https://eval.ai/web/challenges/challenge-page/2094/overview](https://eval.ai/web/challenges/challenge-page/2094/overview)
 
 | Task                      | Split  | Videos | Audio  | Labels |
 |---------------------------|--------|--------|--------|-------|
-| Single Object Tracking     | Train  | Use full split download above    |  N/A   |  Use full split download above   |
+| Single Object Tracking     | Train  | Use full split download above  |  N/A   |  Use full split download above   |
 | Single Object Tracking     | Valid  |  [sot_valid_videos_challenge2023.zip (11.6GB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_valid_videos_challenge2023.zip)      |  N/A    |  [sot_valid_annotations_challenge2023.zip (9MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_valid_annotations_challenge2023.zip)    |
 | Single Object Tracking     | Test  |  [sot_test_videos_challenge2023.zip (12.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_test_videos_challenge2023.zip)      |  N/A    |  [sot_test_annotations_challenge2023.zip (613kB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_test_annotations_challenge2023.zip)    |
 
@@ -138,8 +142,6 @@ In this repo we provide dummy baselines to demonstrate how to load the data, eva
 | Temporal Sound Localisation  | [ActionFormer](https://github.com/deepmind/perception_test/blob/main/baselines/temporal_sound_localisation.ipynb) | [ActionFormer model](https://github.com/ptchallenge-workshop/actionformer_release_PT) fine-tuned on Perception Test data. |
 | Multiple-Choice Video QA   | [Frequency](https://github.com/deepmind/perception_test/blob/main/baselines/mc_vqa.ipynb)           | Frequency baseline using training question/answer pairs. More details are provided in the paper. |
 | Grounded Video QA        | [MDETR + static](https://github.com/deepmind/perception_test/blob/main/baselines/grounded_vqa.ipynb)       | [MDETR](https://github.com/facebookresearch/multimodal/tree/main) open-vocabulary object detections kept static throughout the video. |
-
-
 
 
 
