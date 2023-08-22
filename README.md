@@ -54,8 +54,8 @@ The Perception Test dataset can be downloaded as zip files containing:
 ## Challenge Downloads
 
 **Video IDs**\
-Since some of the challenges use subsets of the datasets, we provide lists of video IDs for each challenge, these can be used to filter the videos/audios/annotations from the full splits above. 
-For single object tracking, single point tracking and grounded video QA we provide separate zip files since the subsets are much smaller than the full dataset.
+Since some of the challenges use subsets of the benchmark, we provide here the lists of video IDs for each challenge. These should be used to filter the videos/audios/annotations from the full splits above. 
+For single object tracking, single point tracking, and grounded video QA we provide separate zip files since the subsets are much smaller than the full dataset.
 
 | Computational task         | Challenge valid video IDs | Challenge test video IDs |
 |---------------------------|--------------------------|--------------------------|
