@@ -1,6 +1,8 @@
 # Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
 # News
+## Challenge deadlines have been extended to 23:59(GMT) September 20!
+
 Test Splits are now available for all the challenges! For Downloads see [download section](https://github.com/deepmind/perception_test#download-the-data-and-annotations).
 
 Join the first Perception Test challenge organised as an ICCV2023 workshop, website here [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
