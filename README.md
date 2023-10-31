@@ -277,13 +277,12 @@ If you have any questions, feedback, or require support regarding the Perception
 ## Citing this work
 
 ```
-@misc{patraucean2023perception,
+@inproceedings{patraucean2023perception,
       title={Perception Test: A Diagnostic Benchmark for Multimodal Video Models}, 
       author={Viorica Pătrăucean and Lucas Smaira and Ankush Gupta and Adrià Recasens Continente and Larisa Markeeva and Dylan Banarse and Skanda Koppula and Joseph Heyward and Mateusz Malinowski and Yi Yang and Carl Doersch and Tatiana Matejovicova and Yury Sulsky and Antoine Miech and Alex Frechette and Hanna Klimczak and Raphael Koster and Junlin Zhang and Stephanie Winkler and Yusuf Aytar and Simon Osindero and Dima Damen and Andrew Zisserman and João Carreira},
+      booktitle={Advances in Neural Information Processing Systems},
       year={2023},
-      eprint={2305.13786},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      url={https://openreview.net/forum?id=HYEGXFnPoq}
 }
 ```
 ## License and disclaimer
