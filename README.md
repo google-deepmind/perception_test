@@ -1,12 +1,10 @@
 # Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
 # News
-## Challenge deadlines have been extended to 23:59(GMT) September 20!
+The Perception Test featured as an ICCV2023 workshop! please see the website here for more details: [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
 
-Test Splits are now available for all the challenges! For Downloads see [download section](https://github.com/deepmind/perception_test#download-the-data-and-annotations).
 
-Join the first Perception Test challenge organised as an ICCV2023 workshop, website here [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
-
+# Overview
 |  |  |
 |-----|----|
 |Quickstart visualisation notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/deepmind/perception_test/blob/main/data_visualisation.ipynb) |
@@ -15,7 +13,7 @@ Join the first Perception Test challenge organised as an ICCV2023 workshop, webs
 |   Challenges and evaluation servers     | [multiple-choice video QA](https://eval.ai/web/challenges/challenge-page/2091/overview), [object tracking](https://eval.ai/web/challenges/challenge-page/2094/overview), [action localisation](https://eval.ai/web/challenges/challenge-page/2101/overview), [point tracking](https://eval.ai/web/challenges/challenge-page/2108/overview), [sound localisation](https://eval.ai/web/challenges/challenge-page/2109/overview), [grounded video QA](https://eval.ai/web/challenges/challenge-page/2110/overview)
 
 
-# Overview
+
 [Perception Test: A Diagnostic Benchmark for Multimodal Video Models](https://arxiv.org/abs/2305.13786) is a multimodal benchmark designed to comprehensively evaluate the perception and reasoning skills of multimodal video models. The Perception Test dataset introduces real-world videos designed to show perceptually interesting situations and defines multiple tasks (object and point tracking, action and sound localisation, multiple-choice and grounded video question-answering) that require understanding of memory, abstract patterns, physics, and semantics, across visual, audio, and text modalities.
 
 In this repository, you will find:
@@ -109,7 +107,7 @@ Challenge link: [https://eval.ai/web/challenges/challenge-page/2109/overview](ht
 | Task                      | Split  | Videos | Audio  | Labels | Audio Features (MMV) | 
 |---------------------------|--------|--------|--------|-------|----------|
 | Temporal Sound Localisation          | Train  |  Use full split download above   | Use full split download above |  [sound_localisation_train_annotations.zip (363kB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_train_annotations.zip)   | [sound_localisation_train_audio_features.zip (109.1MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_train_audio_features.zip)    |
-| Temporal Sound Localisation          | Valid   |  Use full split download above   | Use full split download above |  [challenge_sound_localisation_valid_annotations.zip (552kB)](https://storage.googleapis.com/dm-perception-test/zip_data/challenge_sound_localisation_valid_annotations.zip)   | [sound_localisation_valid_audio_features.zip (291.4MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_valid_sound_features.zip)     |
+| Temporal Sound Localisation          | Valid   |  Use full split download above   | Use full split download above |  [challenge_sound_localisation_valid_annotations.zip (552kB)](https://storage.googleapis.com/dm-perception-test/zip_data/challenge_sound_localisation_valid_annotations.zip)   | [sound_localisation_valid_audio_features.zip (291.4MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_valid_audio_features.zip)     |
 | Temporal Sound Localisation          | Test   |  Use full split download above   | Use full split download above | N/A | [sound_localisation_test_video_features.zip (177.2MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_test_audio_features.zip)     |
 
 
