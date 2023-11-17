@@ -204,7 +204,7 @@ Metrics code to evaluate performance for the different tasks coming soon.
 | bounding_boxes         | The coordinates of the object's bounding box in the format [x1,y1,x2,y2] shape [n,4] where n is the number of annotated frames. |
 | initial_tracking_box   | one-hot vector indicating which box annotation should be used to start the tracking for this object [n]. |
 | frame_ids              | The IDs of the frames that are annotated, normally 1 per second, e.g. 0, 30, 60, etc. shape [n]. |
-| timestamps             | The timestamps of the annotated frames in ms. shape [n].                             |
+| timestamps             | The timestamps of the annotated frames in &mu;s. Shape [n].                             |
 | is_masked              | Whether the object is masked in the annotated frame, corresponds to the bounding boxes [n] ( This is valid only for the cups-games videos). |
 
 
@@ -225,7 +225,7 @@ Metrics code to evaluate performance for the different tasks coming soon.
 | id                 | A unique annotation ID for each action segment.                       |
 | label              | The templated class of the action segment, e.g. Putting something into something. |
 | parent_objects     | The ids of the objects involved in the action, can be empty, single, multiple or -1 for an object not annotated. |
-| timestamps         | The start and end timestamps of the action segment in ms [start time, end time]. |
+| timestamps         | The start and end timestamps of the action segment in &mu;s [start time, end time]. |
 | frame_ids          | The start and end frame IDs of the action segment [start frame, end frame]. |
 | label_id           | A unique class ID for each label in the dataset.                      |
 
@@ -238,7 +238,7 @@ Metrics code to evaluate performance for the different tasks coming soon.
 | id                 | A unique annotation ID for each sound segment.                             |
 | label              | The name or class of the sound segment.                                    |
 | parent_objects     | The object ids related to this sound segment, can be empty, single, multiple or -1 for an object not annotated. |
-| timestamps         | The start and end timestamps of the sound segment in ms [start time, end time]. |
+| timestamps         | The start and end timestamps of the sound segment in &mu;s [start time, end time]. |
 | frame_ids          | The start and end frame IDs of the sound segment [start frame, end frame]. |
 | is_visible         | Whether the objects causing the sound in this segment are visible or not, e.g. if an object falls off the table and the impact point with the floor is occluded, then is_visible=False. |
 | label_id           | A unique class ID for each label in the dataset.                            |
