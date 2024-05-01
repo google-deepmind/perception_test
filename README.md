@@ -169,7 +169,7 @@ Metrics code to evaluate performance for the different tasks coming soon.
 
 | Annotation type          | Number of videos | Number of annotations |
 |--------------------------|------------------|-----------------------|
-| Object tracks            |           11,609 |      9,940   |
+| Object tracks            |           11,609 |      189,940   |
 | Point tracks             |              145 |      8,647   |
 | Action segments          |           11,353 |      73,503  |
 | Sound segments           |           11,433 |      137,128 |
