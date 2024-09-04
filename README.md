@@ -1,7 +1,7 @@
 # Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
 # News
-The Perception Test featured as an ICCV2023 workshop! please see the website here for more details: [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
+The Second Perception Test Challenge is being organised as an ECCV2024 workshop! Please see the website here for more details: [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
 
 
 # Overview
