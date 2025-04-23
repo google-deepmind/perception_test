@@ -49,7 +49,7 @@ The Perception Test dataset can be downloaded as zip files containing:
 | All Tasks                 | Valid  |  [valid_videos.zip (70.2GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_videos.zip)      |  [valid_audios.zip (33.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_audios.zip)      |  [valid_annotations.zip (81.5MB)](https://storage.googleapis.com/dm-perception-test/zip_data/valid_annotations.zip)    |
 | All Tasks                 | Test  |  [test_videos.zip (41.8GB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_videos.zip)      |  [test_audios.zip (19.3GB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_audios.zip)      |  [test_annotations.zip (633.9kB)](https://storage.googleapis.com/dm-perception-test/zip_data/test_annotations.zip)    |
 
-*In test videos, where the end of the video gives away the answer to some questions (e.g. in cup-games, where is the hidden object at the end), we cut the end of the video. For the validation split, we provide the frame id where the cut should be made: [cut_frame_mapping_valid.json](https://storage.googleapis.com/dm-perception-test/misc/cut_frame_mapping_valid.json). 
+*In test videos where the end of the video gives away the answer to some questions (e.g. in cup-games, where is the hidden object at the end), we cut the end of the video. For the validation and train splits, we provide the frame id where the cut should be made: [cut_frame_mapping_train.json](https://storage.googleapis.com/dm-perception-test/misc/cut_frame_mapping_train.json), [cut_frame_mapping_valid.json](https://storage.googleapis.com/dm-perception-test/misc/cut_frame_mapping_valid.json). 
 
 
 ## Challenge Downloads
