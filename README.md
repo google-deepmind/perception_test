@@ -1,7 +1,9 @@
 # Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
 # News
-The Second Perception Test Challenge is being organised as an ECCV2024 workshop! Please see the website here for more details and links to eval.ai challenge pages: [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).
+The Third Perception Test Challenge will be organised as an ICCV2025 workshop! More information coming soon!
+
+<!--Please see the website here for more details and links to eval.ai challenge pages: [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).-->
 
 
 # Overview
@@ -71,8 +73,8 @@ For single object tracking, single point tracking, and grounded video QA we prov
 
 
 
-**Single Object Tracking**\
-Challenge link: [https://eval.ai/web/challenges/challenge-page/2094/overview](https://eval.ai/web/challenges/challenge-page/2094/overview)
+**Single Object Tracking**
+<!--Challenge link: [https://eval.ai/web/challenges/challenge-page/2094/overview](https://eval.ai/web/challenges/challenge-page/2094/overview)-->
 
 | Task                      | Split  | Videos | Audio  | Labels |
 |---------------------------|--------|--------|--------|-------|
@@ -81,8 +83,8 @@ Challenge link: [https://eval.ai/web/challenges/challenge-page/2094/overview](ht
 | Single Object Tracking     | Test  |  [sot_test_videos_challenge2023.zip (12.1GB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_test_videos_challenge2023.zip)      |  N/A    |  [sot_test_annotations_challenge2023.zip (613kB)](https://storage.googleapis.com/dm-perception-test/zip_data/sot_test_annotations_challenge2023.zip)    |
 
 
-**Single Point Tracking**\
-Challenge link: [https://eval.ai/web/challenges/challenge-page/2108/overview](https://eval.ai/web/challenges/challenge-page/2108/overview)
+**Single Point Tracking**
+<!--Challenge link: [https://eval.ai/web/challenges/challenge-page/2108/overview](https://eval.ai/web/challenges/challenge-page/2108/overview)-->
 
 | Task                      | Split  | Videos | Audio  | Labels |
 |---------------------------|--------|--------|--------|-------|
@@ -91,8 +93,8 @@ Challenge link: [https://eval.ai/web/challenges/challenge-page/2108/overview](ht
 | Single Point Tracking     | Test  |  [point_tracking_test_videos.zip (691MB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_test_videos.zip)    |  N/A   | [point_tracking_test_annotations.zip (42.2kB)](https://storage.googleapis.com/dm-perception-test/zip_data/point_tracking_test_annotations.zip)    |
 
 
-**Temporal Action Localisation**\
-Challenge link: [https://eval.ai/web/challenges/challenge-page/2101/overview](https://eval.ai/web/challenges/challenge-page/2101/overview)
+**Temporal Action Localisation**
+<!--Challenge link: [https://eval.ai/web/challenges/challenge-page/2101/overview](https://eval.ai/web/challenges/challenge-page/2101/overview)-->
 
 | Task                      | Split  | Videos | Audio  | Labels | Video Features (TSP) | 
 |---------------------------|--------|--------|--------|-------|----------|
@@ -102,8 +104,8 @@ Challenge link: [https://eval.ai/web/challenges/challenge-page/2101/overview](ht
 
 
 
-**Temporal Sound Localisation**\
-Challenge link: [https://eval.ai/web/challenges/challenge-page/2109/overview](https://eval.ai/web/challenges/challenge-page/2109/overview)
+**Temporal Sound Localisation**
+<!--Challenge link: [https://eval.ai/web/challenges/challenge-page/2109/overview](https://eval.ai/web/challenges/challenge-page/2109/overview)-->
 
 | Task                      | Split  | Videos | Audio  | Labels | Audio Features (MMV) | 
 |---------------------------|--------|--------|--------|-------|----------|
@@ -112,17 +114,17 @@ Challenge link: [https://eval.ai/web/challenges/challenge-page/2109/overview](ht
 | Temporal Sound Localisation          | Test   |  Use full split download above   | Use full split download above | N/A | [sound_localisation_test_video_features.zip (177.2MB)](https://storage.googleapis.com/dm-perception-test/zip_data/sound_localisation_test_audio_features.zip)     |
 
 
-**Multiple-Choice Video QA**\
-Challenge link: [https://eval.ai/web/challenges/challenge-page/2091/overview](https://eval.ai/web/challenges/challenge-page/2091/overview)
+**Multiple-Choice Video QA**
+<!--Challenge link: [https://eval.ai/web/challenges/challenge-page/2091/overview](https://eval.ai/web/challenges/challenge-page/2091/overview)-->
 
 | Task                      | Split  | Videos | Audio  | Labels |
 |---------------------------|--------|--------|--------|-------|
-| Multiple-Choice Video QA          | Train  |  Use full split download above   | Use full split download above |  [mc_question_train_annotations.zip (85kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_train_annotations.zip)   |
-| Multiple-Choice Video QA          | Valid   |  Use full split download above   | Use full split download above |  [mc_question_valid_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_valid_annotations.zip)   |
+| Multiple-Choice Video QA          | Train  |  Use full split download above   | Use full split download above |  [mc_question_train_annotations.zip (85kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_train_annotations.zip), [cut_frame_mapping_train.json](https://storage.googleapis.com/dm-perception-test/misc/cut_frame_mapping_train.json)  |
+| Multiple-Choice Video QA          | Valid   |  Use full split download above   | Use full split download above |  [mc_question_valid_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_valid_annotations.zip), [cut_frame_mapping_valid.json](https://storage.googleapis.com/dm-perception-test/misc/cut_frame_mapping_valid.json)    |
 | Multiple-Choice Video QA          | Test   |  Use full split download above   | Use full split download above |  [mc_question_test_annotations.zip (200kB)](https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_test_annotations.zip)   |
 
-**Grounded Video QA**\
-Challenge link: [https://eval.ai/web/challenges/challenge-page/2110/overview](https://eval.ai/web/challenges/challenge-page/2110/overview)
+**Grounded Video QA**
+<!--Challenge link: [https://eval.ai/web/challenges/challenge-page/2110/overview](https://eval.ai/web/challenges/challenge-page/2110/overview)-->
 
 | Task                      | Split  | Videos | Audio  | Labels |
 |---------------------------|--------|--------|--------|-------|
