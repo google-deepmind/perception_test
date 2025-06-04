@@ -1,7 +1,7 @@
 # Perception Test: A Diagnostic Benchmark for Multimodal Video Models
 
 # News
-The Third Perception Test Challenge will be organised as an ICCV2025 workshop! More information coming soon!
+The Third Perception Test Challenge will be organised as an ICCV2025 workshop, challenge website [here](https://perception-test-challenge.github.io/).
 
 <!--Please see the website here for more details and links to eval.ai challenge pages: [ptchallenge-workshop.github.io](https://ptchallenge-workshop.github.io/).-->
 
